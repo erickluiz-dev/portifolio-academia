@@ -405,65 +405,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* TESTIMONIALS */}
-      <section style={{ padding: "96px 24px", background: "#F8FAFC" }}>
-        <div style={{ maxWidth: 1280, margin: "0 auto" }}>
-          <div style={{ textAlign: "center", marginBottom: 56 }}>
-            <span style={{ fontFamily: "Inter, sans-serif", fontWeight: 600, fontSize: 13, color: "#2563EB", letterSpacing: "0.08em", textTransform: "uppercase" }}>
-              Depoimentos
-            </span>
-            <h2 style={{ fontFamily: "Manrope, sans-serif", fontWeight: 800, fontSize: "clamp(1.8rem, 3vw, 2.5rem)", color: "#111827", margin: "12px 0 0", letterSpacing: "-0.02em" }}>
-              Quem treina aqui, recomenda
-            </h2>
-          </div>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 24 }} className="testimonials-grid">
-            {testimonials.slice(0, 3).map(({ name, since, text, avatar }) => (
-              <div key={name} style={{ background: "#fff", borderRadius: 20, padding: 32, border: "1px solid #E5E7EB" }}>
-                <div style={{ display: "flex", gap: 4, marginBottom: 18 }}>
-                  {Array.from({ length: 5 }).map((_, i) => (
-                    <svg key={i} width="16" height="16" viewBox="0 0 24 24" fill="#F59E0B"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>
-                  ))}
-                </div>
-                <p style={{ fontFamily: "Inter, sans-serif", fontSize: 14.5, color: "#374151", lineHeight: 1.7, marginBottom: 24, fontStyle: "italic" }}>
-                  "{text}"
-                </p>
-                <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-                  <div style={{ width: 44, height: 44, borderRadius: "50%", overflow: "hidden", flexShrink: 0, backgroundColor: "#CBD5E1" }}>
-                    <img src={`https://images.unsplash.com/photo-${avatar}?w=88&h=88&fit=crop&auto=format`} alt={name} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
-                  </div>
-                  <div>
-                    <div style={{ fontFamily: "Manrope, sans-serif", fontWeight: 700, fontSize: 14, color: "#111827" }}>{name}</div>
-                    <div style={{ fontFamily: "Inter, sans-serif", fontSize: 12, color: "#9CA3AF" }}>{since}</div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-          <div style={{ display: "flex", gap: 24, marginTop: 24 }} className="testimonials-grid">
-            {testimonials.slice(3).map(({ name, since, text, avatar }) => (
-              <div key={name} style={{ background: "#fff", borderRadius: 20, padding: 32, border: "1px solid #E5E7EB", flex: 1 }}>
-                <div style={{ display: "flex", gap: 4, marginBottom: 18 }}>
-                  {Array.from({ length: 5 }).map((_, i) => (
-                    <svg key={i} width="16" height="16" viewBox="0 0 24 24" fill="#F59E0B"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>
-                  ))}
-                </div>
-                <p style={{ fontFamily: "Inter, sans-serif", fontSize: 14.5, color: "#374151", lineHeight: 1.7, marginBottom: 24, fontStyle: "italic" }}>
-                  "{text}"
-                </p>
-                <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-                  <div style={{ width: 44, height: 44, borderRadius: "50%", overflow: "hidden", flexShrink: 0, backgroundColor: "#CBD5E1" }}>
-                    <img src={`https://images.unsplash.com/photo-${avatar}?w=88&h=88&fit=crop&auto=format`} alt={name} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
-                  </div>
-                  <div>
-                    <div style={{ fontFamily: "Manrope, sans-serif", fontWeight: 700, fontSize: 14, color: "#111827" }}>{name}</div>
-                    <div style={{ fontFamily: "Inter, sans-serif", fontSize: 12, color: "#9CA3AF" }}>{since}</div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* FREE TRIAL CTA */}
       <section style={{ padding: "96px 24px", background: "linear-gradient(135deg, #1E3A8A 0%, #2563EB 50%, #1D4ED8 100%)", position: "relative", overflow: "hidden" }}>
