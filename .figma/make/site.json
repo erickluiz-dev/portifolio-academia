@@ -1,0 +1,10 @@
+{
+  "description": "Explore Pulse Fitness, a modern gym website that offers class schedules, membership plans, instructor profiles, and a BMI calculator to enhance your fitness journey.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
